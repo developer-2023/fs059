@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes - exercise</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        a {
+            color: aliceblue;
+        }
+        a:visited {
+            color: blue;
+        }
+        a:hover {
+            color: green;
+        }
+        a:active {
+            color: red;
+        }
+        ul li:first-child {
+            text-transform: uppercase;
+        }
+        ul li:last-child {
+            background-color: white;
+        }
+        ul li:nth-child(even) {
+            font-style: italic;
+        }
+        ul li:nth-child(odd) {
+            font-weight: bold;
+        }
+        input:disabled {
+            outline: 3px solid green;
+        }
+        input:checked {
+            outline: 3px solid red;
+        }
+        input:focus {
+            outline: 3px solid orange;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.example.com">example</a></li>
+        <li><a href="https://www.test.com">test</a></li>
+        <li><a href="https://wwww.something.com">something</a></li>
+        <li><a href="https://www.duckduckgo.com">duckduckgo</a></li>
+    </ul>
+    <form action="">
+        <input type="text" value="Anna">
+        <input type="text" value="Kowalsky" disabled>
+        <input type="checkbox" name="" id="">I accept
+        <button>Send</button>
+    </form>
+</body>
+</html>
